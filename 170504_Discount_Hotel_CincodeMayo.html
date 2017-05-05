@@ -1,0 +1,804 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"> 
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Hotwire</title>
+
+<style type="text/css">
+    table th { margin:0 !important; padding:0 !important; vertical-align:top !important; font-weight: normal !important; }
+    body{ padding:0; margin:0; width:100%; margin-left:0px !important; margin-right:0px !important; }
+    html { -webkit-text-size-adjust:none; }
+    v\:* { behavior: url(#default#VML); display:block;}
+    .ExternalClass * { line-height: 100%; }
+
+    html { -webkit-text-size-adjust:none; -ms-text-size-adjust:none; }
+    body { margin:0; padding:0; }
+    div,button { display: block !important; }
+
+    .ReadMsgBody { width: 100%; }
+    .ExternalClass { width: 100%; }
+    .ExternalClass *{line-height:100%; }
+
+    a[x-apple-data-detectors] {
+    color: inherit !important;
+    text-decoration: none !important;
+    font-size: inherit !important;
+    font-family: inherit !important;
+    font-weight: inherit !important;
+    line-height: inherit !important;
+    }
+
+    @media screen and (max-width: 620px) {
+    /* general */
+    *[class].block {display:block !important;}
+    *[class].blockhead {display: table-header-group !important; }
+    *[class].blockfoot {display: table-footer-group !important; }
+    *[class].hide {display:none !important;}
+    *[class].show {display: block !important; width: auto !important; overflow: visible !important; float: none !important; max-height: inherit !important; line-height: inherit !important;}
+    *[class].centertable {margin:0 auto !important;}
+    *[class].aligncenter {text-align:center !important;}
+    *[class].alignleft {text-align:left !important;}
+	*[class].alignright {text-align:right !important;}
+    *[class].width320 {width:320px !important;}
+    *[class].min320 {min-width:320px !important;}
+    *[class].hauto   {height:auto !important;}
+
+    /* mod 1.1 */
+    *[class].width15 {width:15px !important; }
+    *[class].width47 {width:47px !important; }
+    *[class].width58 {width:58px !important; }
+    *[class].width60 {width:60px !important; }
+    *[class].width123 {width:123px !important; }
+    *[class].width140 {width:140px !important; }
+    *[class].min320 {min-width:320px !important; }
+
+    /* mod 1.2 */
+    *[class].pl1 {padding-left:1px !important; }
+    *[class].pr48 {padding-right:48px !important; }
+    *[class].plr15 {padding-left:15px !important; padding-right:15px !important; }
+    *[class].width148 {width:148px !important; }
+    *[class].width162 {width:162px !important; }
+    *[class].line2 {line-height:2px !important; }
+    *[class].line6 {line-height:6px !important; }
+    *[class].line30 {line-height:30px !important; }
+    *[class].font10 {font-size:10px !important; }
+
+    /* 4.2 */
+    *[class].line5 {line-height:5px !important; }
+    *[class].line15 {line-height:15px !important; }
+    *[class].width290 {width:290px !important; }
+    *[class].minmax290 {min-width:290px !important; max-width:290px !important; }
+
+    /* find a car-flight */
+    *[class].width14 {width:14px !important; }
+    *[class].width304 {width:304px !important; }
+    *[class].width318 {width:318px !important; }
+
+    /* download our app banner */
+    *[class].font13 {font-size:13px !important; }
+    *[class].font16 {font-size:16px !important; }
+    *[class].font36 {font-size:36px !important; }
+    *[class].line4 {line-height:4px !important; }
+    *[class].line10 {line-height:10px !important; }
+    *[class].line18 {line-height:18px !important; }
+    *[class].line20 {line-height:20px !important; }
+    *[class].line38 {line-height:38px !important; }
+    *[class].height128 {height:128px !important; }
+    *[class].width23 {width:23px !important; }
+    *[class].width141 {width:141px !important; }
+    *[class].width154 {width:154px !important; }
+    *[class].width177 {width:177px !important; }
+    *[class].width318 {width:318px !important; }
+    *[class].bgswapGrey {background-color:#d0d0d0 !important; }
+
+    /* coupon banner */
+    *[class].line11 {line-height:11px !important;}
+    *[class].height21 {height:21px !important;}
+
+    /* hero */
+    *[class].herobg {background:url('images/hero_bg_m.png') !important; width:320px !important; height:418px !important;}
+    *[class].pb5 {padding-bottom:5px !important; }
+    *[class].width2 {width:2px !important; }
+    *[class].width6 {width:6px !important; }
+    *[class].width12 {width:12px !important; }
+    *[class].width21 {width:21px !important; }
+    *[class].width26 {width:26px !important; }
+    *[class].width29 {width:29px !important; }
+    *[class].width35 {width:35px !important; }
+    *[class].width39 {width:39px !important; }
+    *[class].width56 {width:56px !important; }
+    *[class].width61 {width:61px !important; }
+    *[class].width67 {width:67px !important; }
+    *[class].width74 {width:74px !important; }
+    *[class].width86 {width:86px !important; }
+    *[class].width100 {width:100px !important; }
+    *[class].width102 {width:102px !important; }
+    *[class].width108 {width:108px !important; }
+    *[class].width124 {width:124px !important; }
+    *[class].width149 {width:149px !important; }
+    *[class].width150 {width:150px !important; }
+    *[class].width160 {width:160px !important; }
+    *[class].width196 {width:196px !important; }
+    *[class].width207 {width:207px !important; }
+    *[class].width212 {width:212px !important; }
+    *[class].width220 {width:220px !important; }
+    *[class].width293 {width:293px !important; }
+    *[class].height17 {height:17px !important; }
+    *[class].height23 {height:23px !important; }
+    *[class].height43 {height:43px !important; }
+    *[class].height46 {height:46px !important; }
+    *[class].font8 {font-size:8px !important;}
+    *[class].font9 {font-size:9px !important;}
+    *[class].font11 {font-size:11px !important;}
+    *[class].font12 {font-size:12px !important;}
+    *[class].font14 {font-size:14px !important;}
+    *[class].font15 {font-size:15px !important;}
+    *[class].font17 {font-size:17px !important;}
+    *[class].font18 {font-size:18px !important;}
+    *[class].font19 {font-size:19px !important;}
+    *[class].font20 {font-size:20px !important;}
+    *[class].font24 {font-size:24px !important;}
+    *[class].font25 {font-size:25px !important;}
+    *[class].font26 {font-size:26px !important;}
+    *[class].font30 {font-size:30px !important;}
+    *[class].font32 {font-size:32px !important;}
+    *[class].font34 {font-size:34px !important;}
+    *[class].font37 {font-size:37px !important;}
+    *[class].font42 {font-size:42px !important;}
+    *[class].font47 {font-size:47px !important;}
+    *[class].font48 {font-size:48px !important;}
+    *[class].font54 {font-size:54px !important;}
+    *[class].font60 {font-size:60px !important;}
+    *[class].font72 {font-size:72px !important;}
+    *[class].font82 {font-size:82px !important;}
+    *[class].line8 {line-height:8px !important;}
+    *[class].line12 {line-height:12px !important;}
+    *[class].line14 {line-height:14px !important;}
+    *[class].line16 {line-height:16px !important;}
+    *[class].line17 {line-height:17px !important;}
+    *[class].line19 {line-height:19px !important;}
+    *[class].line21 {line-height:21px !important;}
+    *[class].line22 {line-height:22px !important;}
+    *[class].line24 {line-height:24px !important;}
+    *[class].line25 {line-height:25px !important;}
+    *[class].line26 {line-height:26px !important;}
+    *[class].line28 {line-height:28px !important;}
+    *[class].line32 {line-height:32px !important;}
+    *[class].line34 {line-height:34px !important;}
+    *[class].line36 {line-height:36px !important;}
+    *[class].line39 {line-height:39px !important;}
+    *[class].line42 {line-height:42px !important;}
+    *[class].line47 {line-height:47px !important;}
+    *[class].line48 {line-height:48px !important;}
+    *[class].line56 {line-height:56px !important;}
+    *[class].line60 {line-height:60px !important;}
+    *[class].line70 {line-height:70px !important;}
+    *[class].line82 {line-height:82px !important;}
+    *[class].lsnone {letter-spacing: 0px !important;}
+    *[class].p16 {padding: 8px 16px !important; }
+    *[class].pb4 {padding-bottom: 4px !important; }
+    *[class].pt46 {padding-top: 46px !important; }
+    *[class].pr6 {padding-right: 6px !important; }
+
+    /* top deals */
+    *[class].width14 {width:14px !important; }
+
+	
+}
+
+.btn a:hover,
+  * [lang=x-btn] a:hover {
+    /*border-color: #cf0006 !important;
+    color: #000000 !important;*/
+    /*background-color: #000000 !important;*/
+    /*box-shadow: 1px 1px 10px #888888;*/
+  }
+
+</style>
+
+<!-- KINETIC -->
+<style>
+    @media screen and (-webkit-min-device-pixel-ratio: 0) {
+        
+    .showme{ display:block !important; width: auto !important; overflow: visible !important; float: none !important; max-height:inherit !important; max-width:inherit !important; line-height: auto !important; margin-top:0px !important; visibility:inherit !important;}
+
+    *[class].hidefallback { display:none !important; }
+
+    /* HAM MENU STYLES */
+
+    *[id]#nav_handle { background:url('images/pinata_kin.png') 0 0 no-repeat; background-size:330px 528px !important; cursor: pointer; display: block !important; width:330px !important; height:264px !important; -webkit-tap-highlight-color: rgba(0, 0, 0, 0); }
+
+    *[id]#nav_menu { height:130px; background-color: #ffffff; max-height: 0; overflow: hidden; transition: max-height .5s ease; }
+
+    *[id]#nav_menu a { display:block; padding:18px 18px 18px 18px; text-decoration:none; font-family:Arial, Helvetica, sans-serif; font-size:30px; letter-spacing:10px;}
+
+    *[id]#nav_checkbox { display:none !important; }
+
+    *[id]#nav_checkbox:checked + table #nav_handle { background:url('images/pinata_kin.png') 0 -264px no-repeat; -webkit-tap-highlight-color: rgba(0, 0, 0, 0); }
+
+    *[id]#nav_checkbox:checked + table ~ #nav_menu { display:block !important; max-height: 130px !important; }
+
+    }
+
+    /*mobile kinetic*/
+    @media only screen and (max-width: 600px) {
+    
+    *[id]#nav_handle { background:url('images/pinata_kin_m.png') 0 0 no-repeat; background-size:318px 478px !important; width:318px !important; height:239px !important; }
+
+    *[id]#nav_checkbox:checked + table #nav_handle { background:url('images/pinata_kin_m.png') 0 -239px no-repeat; }
+
+    *[id]#nav_checkbox:checked + table ~ #nav_menu { display:block !important; max-height: 120px !important; }
+
+    .showmob { display: block !important; overflow: visible !important; }
+
+    }
+</style>
+<!-- /KINETIC -->
+
+<!--[if gte mso 9]>
+<style type="text/css">
+    .lhfix {mso-line-height-rule: exactly;}
+    .ml10 {margin-left:10px;}
+    .mr25 {margin-right:25px !important;}
+    div {mso-line-height-rule: 100%;}
+    .supFix {mso-text-raise: 60%;}
+    .supFixTwo {mso-text-raise: 140%;}
+</style>
+<![endif]-->
+
+</head>
+<body>
+<!-- module 1.1 -->
+<table cellspacing="0" cellpadding="0" border="0" width="100%" style="table-layout:fixed;"> 
+<tr>
+    <td width="100%" align="center" style="vertical-align:top;" bgcolor="#ffffff">
+        <table cellspacing="0" cellpadding="0" border="0">
+        <tr>
+            <td width="640" class="width320" align="center">
+                <table cellpadding="0" cellspacing="0" border="0" width="640" class="width320">
+                <tr>
+                    <td width="640" class="width320" align="center" valign="middle" bgcolor="#f1f1f1">
+                        <div class="lhfix" style="line-height:8px;">&nbsp;</div>
+                        <div style="font-family:Helvetica, Arial, sans-serif; font-size:10px; line-height:12px; color:#434343;" class="">
+                            <strong>Hurry, deal ends in 48 hours</strong>
+                        </div>
+                        <div class="lhfix" style="line-height:8px;">&nbsp;</div>
+                    </td>
+                </tr>
+                </table>
+                <table cellpadding="0" cellspacing="0" border="0" width="640" class="width320">
+                <tr>
+                    <td width="25" class="width15"></td>
+                    <td width="250" height="71" align="left" valign="middle" style="vertical-align:middle;" class="width140">
+                        <a href="$clickthrough(Hotwire_Logo)$"><img src="images/nav_logo.png" width="150" height="31" border="0" style="display:block; font-family:Helvetica, sans-serif; font-size:20px; color:#ba1813;" alt="hotwire&reg;" class="width123 hauto" /></a>
+                    </td>
+                    <td width="93" align="left" valign="middle" style="vertical-align:middle;" class="width58">
+                        <div class="lhfix" style="line-height:3px;">&nbsp;</div>
+                        <div style="font-family:Helvetica, sans-serif; font-size:14px; line-height:16px; color:#000000;">
+                            <a href="$clickthrough(Top_Right_Nav_Hotel)$" style="text-decoration:none; color:#e64142;"><strong>Hotels</strong></a>
+                        </div>
+                    </td>
+                    <td width="83" align="left" valign="middle" style="vertical-align:middle;" class="width47">
+                        <div class="lhfix" style="line-height:3px;">&nbsp;</div>
+                        <div style="font-family:Helvetica, sans-serif; font-size:14px; line-height:16px; color:#000000;">
+                            <a href="$clickthrough(Top_Right_Nav_Car_Rental)$" style="text-decoration:none; color:#000000;"><strong>Cars</strong></a>
+                        </div>
+                    </td>
+                    <td width="99" align="left" valign="middle" style="vertical-align:middle;" class="width60">
+                        <div class="lhfix" style="line-height:3px;">&nbsp;</div>
+                        <div style="font-family:Helvetica, sans-serif; font-size:14px; line-height:16px; color:#000000;">
+                            <a href="$clickthrough(Top_Right_Nav_Flights)$" style="text-decoration:none; color:#000000;"><strong>Flights</strong></a>
+                        </div>
+                    </td>
+                    <td width="90" align="left" valign="middle" style="vertical-align:middle;" class="hide">
+                        <div class="lhfix" style="line-height:3px;">&nbsp;</div>
+                        <div style="font-family:Helvetica, sans-serif; font-size:14px; line-height:16px; color:#000000;">
+                            <a href="$clickthrough(Top_Right_Nav_Vacations)$" style="text-decoration:none; color:#000000;"><strong>Vacations</strong></a>
+                        </div>
+                    </td>
+                </tr>
+                </table>
+                <table cellpadding="0" cellspacing="0" border="0" width="640" class="width320" bgcolor="#d2d2d2"><tr><td height="1" style="line-height:1px;"><img src="images/sp.gif" width="1" height="1" border="0" style="display:block;"/></td></tr></table>
+                <div class="lhfix" style="line-height:10px;">&nbsp;</div>
+            </td>
+        </tr>
+        </table>
+    </td>
+</tr>
+</table>
+<!-- /module 1.1 -->
+<!-- content -->
+<!-- hero -->
+<table cellspacing="0" cellpadding="0" border="0" width="100%" style="table-layout:fixed;"> 
+<tr>
+    <td width="100%" align="center" style="vertical-align:top;" bgcolor="#ffffff">
+        <table cellspacing="0" cellpadding="0" border="0">
+        <tr><td colspan="3" height="1" bgcolor="#d1d1d1" style="line-height:1px;"><div style="height:1px;"><img src="images/sp.gif" width="1" height="1" border="0" style="display:block;"/></div></td></tr>
+        <tr>
+            <td width="1" bgcolor="#d1d1d1"></td>
+            <td width="638" align="center" valign="top" bgcolor="#ffffff" class="width318">
+                    <div style="line-height:10px;" class="lhfix">&nbsp;</div>
+                    <div style="line-height:10px;" class="lhfix hide">&nbsp;</div>
+                    <table cellpadding="0" cellspacing="0" border="0">
+                    <tr>
+                        <td width="638" align="left" class="width318">
+                            <table cellpadding="0" cellspacing="0" border="0" class="hide">
+                            <tr>
+                                <td>
+                                    <table cellpadding="0" cellspacing="0" border="0">
+                                    <tr><td height="1" bgcolor="#d1d1d1" style="line-height:1px;"><div style="height:1px;"><img src="images/sp.gif" width="1" height="1" border="0" style="display:block;"/></div></td></tr>
+                                    <tr>
+                                        <td width="115" height="34" align="center" valign="middle">
+                                            <div style="line-height:2px;" class="lhfix">&nbsp;</div>
+                                            <div style="font-family: Helvetica, Arial, sans-serif; font-size:16px; line-height:18px; color:#e64142;">
+                                                <a href="$clickthrough(hotel_landingpage_link)$" style="text-decoration: none; color:#e64142;"><strong>&nbsp;2&nbsp;DAYS&nbsp;ONLY</strong></a>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr><td height="1" bgcolor="#d1d1d1" style="line-height:1px;"><div style="height:1px;"><img src="images/sp.gif" width="1" height="1" border="0" style="display:block;"/></div></td></tr>
+                                    </table>
+                                </td>
+                                <td align="left">
+                                    <img src="images/hero_rounded_d.png" width="8" height="36" border="0" style="display:block; font-family:Helvetica, sans-serif; font-size:20px; color:#ffffff;" alt="" />
+                                </td>
+                                <td width="400" align="center">
+                                    <div style="line-height:5px;" class="lhfix">&nbsp;</div>
+                                    <table cellpadding="0" cellspacing="0" border="0">
+                                    <tr>
+                                        <td align="right" valign="middle" style="vertical-align: middle; line-height: 1px;">
+                                            <img src="images/bar.png" width="25" height="2" border="0" style="display:block;" alt="" />
+                                        </td>
+                                        <td width="12"></td>
+                                        <td align="center" valign="middle" style="vertical-align: middle; line-height: 1px;">
+                                            <div style="font-family: Helvetica, Arial, sans-serif; font-size:24px; line-height:26px; color:#e64142; font-weight: 100;" class="">
+                                                <a href="$clickthrough(hotel_landingpage_link)$" style="text-decoration: none; color:#e64142;"><em>Cinco de Mayo Hotel Sale</em></a>
+                                            </div>
+                                        </td>
+                                        <td width="16"></td>
+                                        <td align="left" valign="middle" style="vertical-align: middle; line-height: 1px;">
+                                            <img src="images/bar.png" width="25" height="2" border="0" style="display:block;" alt="" />
+                                        </td>
+                                    </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                            </table>
+                            <!--[if !mso]><!-->
+                            <div class="show" style="display:none; float:left; overflow:hidden; width:0; max-height:0; line-height:0;">
+                                <table cellpadding="0" cellspacing="0" border="0">
+                                <tr>
+                                    <td>
+                                        <table cellpadding="0" cellspacing="0" border="0">
+                                        <tr><td height="1" bgcolor="#d1d1d1" style="line-height:1px;"><div style="height:1px;"><img src="images/sp.gif" width="1" height="1" border="0" style="display:block;"/></div></td></tr>
+                                        <tr>
+                                            <td width="87" height="23" align="center" valign="middle">
+                                                <div style="line-height:1px;" class="lhfix">&nbsp;</div>
+                                                <div style="font-family: Helvetica, Arial, sans-serif; font-size:12px; line-height:14px; color:#e64142;">
+                                                    <a href="$clickthrough(hotel_landingpage_link)$" style="text-decoration: none; color:#e64142;"><strong>&nbsp;2&nbsp;DAYS&nbsp;ONLY</strong></a>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr><td height="1" bgcolor="#d1d1d1" style="line-height:1px;"><div style="height:1px;"><img src="images/sp.gif" width="1" height="1" border="0" style="display:block;"/></div></td></tr>
+                                        </table>
+                                    </td>
+                                    <td align="left">
+                                        <img src="images/hero_rounded_m.png" width="7" height="25" border="0" style="display:block; font-family:Helvetica, sans-serif; font-size:20px; color:#ffffff;" alt="" />
+                                    </td>
+                                </tr>
+                                </table>
+                            </div>
+                            <!--<![endif]-->
+                        </td>
+                    </tr>
+                    </table>
+                    <!--[if !mso]><!-->
+                    <div class="show" style="display:none; float:left; overflow:hidden; width:0; max-height:0; line-height:0;">
+                        <div style="line-height:13px;" class="lhfix">&nbsp;</div>
+                        <div style="font-family: Helvetica, Arial, sans-serif; font-size:26px; line-height:28px; color:#e64142; font-weight: 100;" class="">
+                            <a href="$clickthrough(hotel_landingpage_link)$" style="text-decoration: none; color:#e64142;"><em>Cinco de Mayo <br />Hotel Sale</em></a>
+                        </div>
+                        <div style="line-height:10px;" class="lhfix">&nbsp;</div>
+                    </div>
+                    <!--<![endif]-->
+                    <div style="line-height:21px;" class="lhfix hide">&nbsp;</div>
+                    <div style="font-family: Helvetica, Arial, sans-serif; font-size:32px; line-height:34px; color:#000000;" class="font30 line32">
+                        <a href="$clickthrough(hotel_landingpage_link)$" style="text-decoration: none; color:#000000;"><strong>Celebrate and save</strong></a>
+                    </div>
+                    <div style="line-height:20px;" class="lhfix line12">&nbsp;</div>
+                    <table cellpadding="0" cellspacing="0" border="0">
+                    <tr>
+                        <td width="40" class="hide"></td>
+                        <td align="right" valign="top">
+                            <table cellpadding="0" cellspacing="0" border="0">
+                            <tr>
+                                <td align="left">
+                                    <div style="font-family: Helvetica, Arial, sans-serif; font-size:24px; line-height:26px; color:#e64142;" class="font18 line20 pb4">
+                                        <a href="$clickthrough(hotel_landingpage_link)$" style="text-decoration: none; color:#e64142;">Get up to</a>
+                                    </div>
+                                    <table cellpadding="0" cellspacing="0" border="0">
+                                    <tr>
+                                        <td align="right" valign="top">
+                                            <div style="font-family: Helvetica, Arial, sans-serif; font-size:100px; line-height:102px; color:#e64142;" class="lhfix font72 line70">
+                                                <a href="$clickthrough(hotel_landingpage_link)$" style="text-decoration: none; color:#e64142;"><strong>60</strong></a>
+                                            </div>
+                                        </td> 
+                                        <td width="4"></td>
+                                        <td align="left" valign="top">
+                                            <div style="font-family: Helvetica, Arial, sans-serif; font-size:60px; line-height:62px; color:#e64142;" class="lhfix font36 line36">
+                                                <a href="$clickthrough(hotel_landingpage_link)$" style="text-decoration: none; color:#e64142;">%</a>
+                                            </div>
+                                            <div style="font-family: Helvetica, Arial, sans-serif; font-size:24px; line-height:26px; color:#e64142;" class="hide">
+                                                <a href="$clickthrough(hotel_landingpage_link)$" style="text-decoration: none; color:#e64142;"><span>OFF<span style="vertical-align: top; font-size: 55%; line-height: 15px;" class="supFix">*</span></span></a>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    </table>
+                                    <!--[if !mso]><!-->
+                                    <div class="show" style="display:none; float:left; overflow:hidden; width:0; max-height:0; line-height:0;">
+                                        <div style="font-family: Helvetica, Arial, sans-serif; font-size:30px; line-height:20px; color:#e64142; padding-left: 2px;">
+                                            <a href="$clickthrough(hotel_landingpage_link)$" style="text-decoration: none; color:#e64142;"><span>OFF<span style="vertical-align: top; font-size: 55%; line-height: 6px;" class="supFix">*</span></span></a>
+                                        </div>
+                                    </div>
+                                    <!--<![endif]-->
+                                </td>
+                            </tr>
+                            </table>
+                        </td>
+                        <td width="9"></td>
+                        <td width="9" class="hide"></td>
+                        <td align="center" valign="middle" style="vertical-align: middle;">
+                            <div style="font-family: Helvetica, Arial, sans-serif; font-size:60px; line-height:62px; color:#e64142;" class="font48 line48 pt46">
+                                <a href="$clickthrough(hotel_landingpage_link)$" style="text-decoration: none; color:#e64142;">+</a>
+                            </div>
+                            <div style="line-height:6px;" class="lhfix hide">&nbsp;</div>
+                        </td>
+                        <td width="18" class="width21"></td>
+                        <td align="left" valign="top">
+                            <table cellpadding="0" cellspacing="0" border="0">
+                            <tr>
+                                <td align="left">
+                                    <div style="font-family: Helvetica, Arial, sans-serif; font-size:24px; line-height:26px; color:#e64142;" class="font18 line20 pb4">
+                                        <a href="$clickthrough(hotel_landingpage_link)$" style="text-decoration: none; color:#e64142;">Get an extra</a>
+                                    </div>
+                                    <table cellpadding="0" cellspacing="0" border="0">
+                                    <tr>
+                                        <td align="right" valign="top">
+                                            <div style="line-height:4px;" class="lhfix">&nbsp;</div>
+                                            <div style="font-family: Helvetica, Arial, sans-serif; font-size:58px; line-height:60px; color:#e64142;" class="lhfix font42 line42">
+                                                <a href="$clickthrough(hotel_landingpage_link)$" style="text-decoration: none; color:#e64142;">$</a>
+                                            </div>
+                                        </td>
+                                        <td align="left" valign="top">
+                                            <div style="font-family: Helvetica, Arial, sans-serif; font-size:100px; line-height:102px; color:#e64142;" class="lhfix font72 line70">
+                                                <a href="$clickthrough(hotel_landingpage_link)$" style="text-decoration: none; color:#e64142;"><strong>15</strong></a>
+                                            </div>
+                                            <!--[if !mso]><!-->
+                                            <div class="show" style="display:none; float:left; overflow:hidden; width:0; max-height:0; line-height:0;">
+                                                <div style="font-family: Helvetica, Arial, sans-serif; font-size:30px; line-height:20px; color:#e64142; padding-left: 5px;">
+                                                    <a href="$clickthrough(hotel_landingpage_link)$" style="text-decoration: none; color:#e64142;"><span>OFF<span style="vertical-align: top; font-size: 55%; line-height: 6px;" class="supFix">**</span></span></a>
+                                                </div>
+                                            </div>
+                                            <!--<![endif]-->
+                                        </td>
+                                        <td width="5" class="hide"></td>
+                                        <td align="left" valign="bottom" class="hide">
+                                            <div style="font-family: Helvetica, Arial, sans-serif; font-size:24px; line-height:26px; color:#e64142;">
+                                                <a href="$clickthrough(hotel_landingpage_link)$" style="text-decoration: none; color:#e64142;"><span>OFF<span style="vertical-align: top; font-size: 55%; line-height: 15px;" class="supFix">**</span></span></a>
+                                            </div>
+                                            <div style="line-height:16px;" class="lhfix">&nbsp;</div>
+                                        </td>
+                                    </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    </table>
+                    <div style="line-height:1px;" class="lhfix line10">&nbsp;</div>
+                    <div style="font-family: Helvetica, Arial, sans-serif; font-size:18px; line-height:20px; color:#666666;" class="lhfix font16 line20">
+                        <a href="$clickthrough(hotel_landingpage_link)$" style="text-decoration: none; color:#666666;"><span class="block">when you spend $100 or</span> more on a Hot <span>Rate<span style="vertical-align: top; font-size: 55%; line-height: 15px;" class="supFix">&reg;</span></span> Hotel**</a>
+                    </div>
+                    <div style="line-height:16px;" class="lhfix line18">&nbsp;</div>
+
+                    <table width="638" border="0" align="center" cellpadding="0" cellspacing="0" class="width318">
+                    <tr>
+                    <td class="width318">
+
+                    <!-- FALLBACK-->
+                    <div class="hidefallback">
+                    <table cellpadding="0" cellspacing="0" border="0">
+                    <tr>
+                        <td width="638" align="center" valign="top" class="width318">
+                            <table cellpadding="0" cellspacing="0" border="0">
+                            <tr>
+                                <td width="9" class="hide"></td>
+                                <td><a href="$clickthrough(hotel_landingpage_link)$"><img src="images/pinata_open.png" width="330" height="264" border="0" style="display:block;" alt="" class="width293 hauto pr6" /></a></td>
+                            </tr>
+                            </table>
+                            <div style="line-height:5px;" class="lhfix line8">&nbsp;</div>
+                            <div style="font-family: Arial, Helvetica, sans-serif; font-size:16px; line-height:18px; color:#000000;">
+                                Use coupon code:
+                            </div>
+                            <div style="line-height:10px;" class="lhfix line8">&nbsp;</div>
+                            <table cellpadding="0" cellspacing="0" border="0">
+                            <tr>
+                                <td height="58">
+                                    <img src="images/border1.png" width="2" height="58" border="0" style="display:block;" alt="" />
+                                </td>
+                                <td width="173" height="58" align="center" valign="middle" style="vertical-align: middle;">
+                                    <table cellpadding="0" cellspacing="0" border="0">
+                                    <tr><td height="2" style="line-height:1px;"><img src="images/border2.png" width="173" height="2" border="0" style="display:block;"/></td></tr>
+                                    <tr>
+                                        <td width="173" height="54" align="center" valign="middle" style="vertical-align: middle;">
+                                            <div style="font-family: Arial, Helvetica, sans-serif; font-size:22px; line-height:24px; color:#000000;">
+                                                <strong>FIESTA15</strong>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr><td height="2" style="line-height:1px;"><img src="images/border3.png" width="173" height="2" border="0" style="display:block;"/></td></tr>
+                                    </table>
+                                </td>
+                                <td height="58">
+                                    <img src="images/border4.png" width="2" height="58" border="0" style="display:block;" alt="" />
+                                </td>
+                            </tr>
+                            </table>
+                            <img src="images/confetti.png" width="361" height="38" border="0" style="display:block;" alt="" class="hide" />
+                            <!--[if !mso]><!-->
+                            <div class="show" style="display:none; float:left; overflow:hidden; width:0; max-height:0; line-height:0;">
+                                <div style="line-height:5px;" class="lhfix">&nbsp;</div>
+                                <table cellpadding="0" cellspacing="0" border="0" width="318">
+                                <tr>
+                                    <td align="center">
+                                        <img src="images/confetti_m.png" width="247" height="30" border="0" style="display:block;" alt="" />
+                                    </td>
+                                    <td width="16"></td>
+                                </tr>
+                                </table>
+                            </div>
+                            <!--<![endif]-->
+                        </td>
+                    </tr>
+                    </table>
+                    </div>
+                    <!-- /FALLBACK -->
+
+                    <!-- KINETIC -->
+                    <!--[if !mso]><! -->
+                    <DIV class="showme" style="display:none; overflow:hidden; float:left; width:0px; max-height:0px; max-width:0px; line-height:0px; visibility:hidden;">
+                    <form>
+                    <input id="nav_checkbox" type="checkbox">
+
+                    <table width="640" border="0" align="center" cellpadding="0" cellspacing="0" class="width320">
+                    <tr>
+                    <td width="640" align="center" class="width320">
+
+                           <!-- item to be clicked -->
+                        <label for="nav_checkbox" id="nav_handle"></label>
+
+                    </td>
+                    </tr>
+                    </table>
+
+                    <!-- INSERT MENU ITEMS HERE -->
+                    <div id="nav_menu">
+                        <!-- content to be shown -->
+                        <table cellpadding="0" cellspacing="0" border="0">
+                        <tr>
+                            <td width="640" align="center" valign="top" class="width320">
+                                <div style="line-height:5px;" class="lhfix">&nbsp;</div>
+                                <div style="font-family: Arial, Helvetica, sans-serif; font-size:16px; line-height:18px; color:#000000;">
+                                    Use coupon code:
+                                </div>
+                                <div style="line-height:10px;" class="lhfix line6">&nbsp;</div>
+                                <table cellpadding="0" cellspacing="0" border="0">
+                                <tr>
+                                    <td height="58">
+                                        <img src="images/border1.png" width="2" height="58" border="0" style="display:block;" alt="" />
+                                    </td>
+                                    <td width="173" height="58" align="center" valign="middle" style="vertical-align: middle;">
+                                        <table cellpadding="0" cellspacing="0" border="0">
+                                        <tr><td height="2" style="line-height:1px;"><img src="images/border2.png" width="173" height="2" border="0" style="display:block;"/></td></tr>
+                                        <tr>
+                                            <td width="173" height="54" align="center" valign="middle" style="vertical-align: middle;">
+                                                <div style="font-family: Arial, Helvetica, sans-serif; font-size:22px; line-height:24px; color:#000000;">
+                                                    <strong>FIESTA15</strong>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr><td height="2" style="line-height:1px;"><img src="images/border3.png" width="173" height="2" border="0" style="display:block;"/></td></tr>
+                                        </table>
+                                    </td>
+                                    <td height="58">
+                                        <img src="images/border4.png" width="2" height="58" border="0" style="display:block;" alt="" />
+                                    </td>
+                                </tr>
+                                </table>
+                                <img src="images/confetti.png" width="361" height="38" border="0" style="display:block;" alt="" class="hide" />
+                                <span style="display:none; overflow:hidden;" class="showmob">
+                                    <table cellpadding="0" cellspacing="0" border="0" width="318">
+                                    <tr>
+                                        <td align="center">
+                                            <div style="line-height:5px;" class="lhfix">&nbsp;</div>
+                                            <img src="images/confetti_m.png" width="247" height="30" border="0" style="display:block;" alt="" />
+                                        </td>
+                                        <td width="16"></td>
+                                    </tr>
+                                    </table>
+                                </span>
+                            </td>
+                        </tr>
+                        </table>
+                    </div>
+                    <!-- INSERT MENU ITEMS HERE -->
+                    </form>
+                    </DIV>
+                    <!--<![endif]-->
+                    <!-- /KINETIC -->
+
+                    </td>
+                    </tr>
+                    </table>
+
+                    <div style="line-height:12px;" class="lhfix">&nbsp;</div>
+                    <div style="line-height:9px;" class="lhfix hide">&nbsp;</div>
+
+                    <!-- cta -->
+                    <!--[if gte mso 9]>
+                    <style type="text/css">
+                        .cta1 { padding: 10px 0px !important; background-color:#e64142 !important; font-family: Helvetica, Arial, sans-serif !important; font-size: 16px !important; font-weight:bold !important;}
+                    </style>
+                    <![endif]-->
+                    <table cellpadding="0" cellspacing="0" border="0">
+                    <tr>
+                        <td>
+                            <a href="$clickthrough(hotel_landingpage_link)$"><img src="images/pale_cta_l.png" width="16" height="44" border="0" style="display:block;" alt="" class="height43" /></a>
+                        </td>
+                        <td align="center" valign="middle" style="vertical-align: middle;" bgcolor="#e64142">
+                            <div class="btn" lang="x-btn">
+                                <table cellpadding="0" cellspacing="0" border="0">
+                                <tr>
+                                    <td class="cta1" style="color:#ffffff;">
+                                        <a href="$clickthrough(hotel_landingpage_link)$" style="color: #ffffff; display: inline-block; font-family: Helvetica, Arial, sans-serif; font-size: 16px; font-weight: bold; line-height: 18px; padding: 11px 0px; text-align: center; text-decoration: none;" class="">
+                                            Find a hotel
+                                        </a>
+                                    </td>
+                                </tr>
+                                </table>
+                            </div>
+                        </td>
+                        <td>
+                            <a href="$clickthrough(hotel_landingpage_link)$"><img src="images/pale_cta_r.png" width="16" height="44" border="0" style="display:block;" alt="" class="height43" /></a>
+                        </td>
+                    </tr>
+                    </table>
+                    <!-- /cta -->
+
+                    <div style="line-height:27px;" class="lhfix">&nbsp;</div>
+                    <div style="font-family: Helvetica, Arial, sans-serif; font-size:12px; line-height:15px; color:#666666;">
+                         <span class="block">Book by 11:59pm (PST) on $campaignenddate$, travel</span> anytime. Minimum $100 Hot Rate<span style="vertical-align: top; font-size: 55%; line-height: 10px;" class="supFix">&reg;</span> Hotel booking.
+                    </div>
+                    <div style="line-height:16px;" class="lhfix">&nbsp;</div>
+            </td>
+            <td width="1" bgcolor="#d1d1d1"></td>
+        </tr>
+        <tr><td colspan="3" height="1" bgcolor="#d1d1d1" style="line-height:1px;"><div style="height:1px;"><img src="images/sp.gif" width="1" height="1" border="0" style="display:block;"/></div></td></tr>
+        </table>
+        <div style="line-height:10px;" class="lhfix">&nbsp;</div>
+    </td>
+</tr>
+</table>
+<!-- /hero -->
+<!-- /content -->
+
+<!-- module 1.2 -->
+<table cellspacing="0" cellpadding="0" border="0" width="100%" style="table-layout:fixed;"> 
+<tr>
+    <td width="100%" align="center" style="vertical-align:top;" bgcolor="#ffffff">
+        <table cellspacing="0" cellpadding="0" border="0">
+        <tr>
+            <td width="640" class="width320" align="center">
+                <table cellspacing="0" cellpadding="0" border="0" bgcolor="#eaeaea" width="640" class="width320">
+                                <tr>
+                                    <th width="312" align="center" style="font-weight:normal;" class="block width320">
+                                        <table cellpadding="0" cellspacing="0" border="0" width="312" class="width320">
+                                        <tr>
+                                            <td width="10" class="hide"></td>
+                                            <td align="center">
+                                                <div class="lhfix" style="line-height:20px;">&nbsp;</div>
+                                                <div style="font-family:Helvetica, sans-serif; font-size:14px; line-height:16px; color:#000000;">
+                                                    <strong>Download the free app</strong>
+                                                </div>
+                                                <div class="lhfix" style="line-height:7px;">&nbsp;</div>
+                                                <table cellpadding="0" cellspacing="0" border="0" width="285" class="width320">
+                                                <tr>
+                                                    <td align="right" class="">
+                                                        <a href="$clickthrough(footer_apple_app)$"><img src="images/apple_store.png" width="116" height="34" border="0" style="display:block; font-family:Helvetica, sans-serif; font-size:20px; color:#000000;" alt="Download on the App Store" /></a>
+                                                    </td>
+                                                    <td width="9"></td>
+                                                    <td align="left" class="">
+                                                        <a href="$clickthrough(footer_google_app)$"><img src="images/android_store.png" width="115" height="34" border="0" style="display:block; font-family:Helvetica, sans-serif; font-size:20px; color:#000000;" alt="GET IT ON Google Play" /></a>
+                                                    </td>
+                                                </tr>
+                                                </table>
+                                                <div class="lhfix line6" style="line-height:26px;">&nbsp;</div>
+                                            </td>
+                                        </tr>
+                                        </table>
+                                    </th>
+                                    <th width="328" align="left" style="font-weight:normal;" class="block width320 aligncenter">
+                                        <table cellpadding="0" cellspacing="0" border="0" width="328" class="width320">
+                                        <tr>
+                                            <td align="center">
+                                                <div class="lhfix" style="line-height:20px;">&nbsp;</div>
+                                                <div style="font-family:Helvetica, sans-serif; font-size:14px; line-height:16px; color:#000000;">
+                                                    <strong>Connect with us</strong>
+                                                </div>
+                                                <div class="lhfix" style="line-height:7px;">&nbsp;</div>
+                                                <table cellpadding="0" cellspacing="0" border="0" width="328" class="width320">
+                                                <tr>
+                                                    <td align="right" valign="top">
+                                                        <a href="$clickthrough(footer_twitter)$"><img src="images/twitter.png" width="35" height="36" border="0" style="display:block; font-family:Helvetica, sans-serif; font-size:20px; color:#000000;" alt="Twitter" /></a>
+                                                    </td>
+                                                    <td width="17"></td>
+                                                    <td width="26" valign="top">
+                                                        <a href="$clickthrough(footer_facebook)$"><img src="images/facebook.png" width="35" height="36" border="0" style="display:block; font-family:Helvetica, sans-serif; font-size:20px; color:#000000;" alt="Facebook" /></a>
+                                                    </td>
+                                                    <td width="20"></td>
+                                                    <td width="36" align="left" valign="top">
+                                                        <a href="$clickthrough(footer_pinterest)$"><img src="images/pinterest.png" width="36" height="37" border="0" style="display:block; font-family:Helvetica, sans-serif; font-size:20px; color:#000000;" alt="Pinterest" /></a>
+                                                    </td>
+                                                    <td width="21"></td>
+                                                    <td align="left" valign="top">
+                                                        <a href="$clickthrough(footer_instagram)$"><img src="images/instagram.png" width="35" height="36" border="0" style="display:block; font-family:Helvetica, sans-serif; font-size:20px; color:#000000;" alt="Instagram" /></a>
+                                                    </td>
+                                                </tr>
+                                                </table>
+                                                <div class="lhfix" style="line-height:18px;">&nbsp;</div>
+                                            </td>
+                                        </tr>
+                                        </table>
+                                    </th>
+                                </tr>
+                                </table>
+                <table cellpadding="0" cellspacing="0" border="0" width="640" class="width320">
+                <tr>
+                    <td align="center">
+                        <div class="lhfix line2" style="line-height:18px;">&nbsp;</div>
+                        <div style="font-family:Helvetica, sans-serif; font-size:11px; line-height:13px; color:#717171;" class="lhfix line30">
+                            <a href="$clickthrough(Footer_Customer_Care)$" style="text-decoration:underline; color:#717171;">Customer Care</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="hide">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <a href="$clickthrough(Terms_of_Use)$" style="text-decoration:underline; color:#717171;">Terms of Use</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="hide">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <a href="$clickthrough(ZipUpdate_Disclaimer)$" style="text-decoration:underline; color:#717171;">Update Zip Code</a> <span class="hide">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <span class="block"><a href="$clickthrough(Privacy_Policy)$" style="text-decoration:underline; color:#717171;" class="pr48">Privacy Policy</a> <span class="hide">&nbsp;&nbsp;&nbsp;</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            <a href="$clickthrough(Subscription_Management)$" style="text-decoration:underline; color:#717171;">Unsubscribe</a></span>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td align="left">
+                        <div class="lhfix" style="line-height:11px;">&nbsp;</div>
+                        <div class="lhfix hide" style="line-height:12px;">&nbsp;</div>
+                        <div style="font-family:Helvetica, sans-serif; font-size:11px; line-height:13px; color:#888888; padding-right:25px;" class="mr26 plr15">
+                        *Savings based on Hot Rate bookings made in the previous 12 months as compared with the lowest published rates found on leading retail travel sites. Hot Rates are different from retail rates. With Hot Rates you enter the date, location and star rating. Hotel revealed only after booking. All bookings final.<br /><br />
+**Offer: Receive an instant $15 discount off a Hot Rate&reg; Hotel booking on Hotwire. The price of the qualifying booking must be at least $100 including taxes and fees. Redeemable on Hotwire.com desktop site or mobile web site. Limit one discount per user account and per hotel booking. Discount may not be combined with any other offer or coupon. This offer is valid for U.S. customers only. Bookings are subject to availability and all applicable terms and conditions. Discount is not transferable or redeemable for cash. Hotwire may revoke or change this offer at any time.
+                            <br /><br />
+                            This commercial message is from Hotwire, Inc. Please do not reply to this message, as we cannot respond to messages sent to this address. You may reach Hotwire at <a href="$clickthrough(Contact_Us)$" style="text-decoration:underline; color:#888888;">Contact Us</a> or via postal mail at: Hotwire, <a href="#" style="text-decoration:none; color:#888888; cursor: pointer;">PO Box 26285, San Francisco, CA 94126</a><br /><br />
+                            &copy; 2017 Hotwire, Inc. All rights reserved. Hotwire, the Hotwire logo, Hot Fare, and Hot Rate are either registered trademarks or trademarks of Hotwire, Inc. Other product and company names shown may be trademarks of their respective owners. CST 2053390-40; NST 20003-0209.
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="-webkit-text-size-adjust:none;font-family:sans-serif;font-size:8pt;color:#FFFFFF;">(NID: $lookup(NID)$) (VID: $lookup(vid)$) (HWID: <a href="#" style="color:#FFFFFF; text-decoration:none;">$lookup(CUSTOMER_ID_)$)</a> (MD: <a href="#" style="color:#FFFFFF; text-decoration:none;">$todayformat(0,M/d/yyyy)$</a>)</td>
+                </tr>
+                </table>
+            </td>
+        </tr>
+        </table>
+    </td>
+</tr>
+</table>
+<table cellpadding="0" cellspacing="0" border="0" width="640" class="width320"><tr><td width="640" height="1" style="line-height:1px;" class="width320"><img src="images/sp.gif" width="640" height="1" border="0" style="display:block; min-width:640px;" class="width320 min320" /></td></tr></table>
+<!-- /module 1.2 -->
+</body>
+</html>
